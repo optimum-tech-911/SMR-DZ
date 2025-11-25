@@ -1,0 +1,10 @@
+export {
+  COMPANY_NAME,
+  MAIN_BRANCH,
+  SPAIN_BRANCH,
+  NAV_LINKS,
+  SERVICES,
+  TESTIMONIALS,
+  PROJECT_IMAGES,
+  COPY,
+} from './translations';
