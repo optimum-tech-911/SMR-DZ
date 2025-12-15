@@ -188,7 +188,7 @@ const Contact: React.FC = () => {
         <div className="mt-16 bg-gray-200 rounded-3xl h-96 w-full flex items-center justify-center relative overflow-hidden">
           <img
             src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=2000"
-            alt="Carte Paris Barcelone"
+            alt="Carte France Espagne"
             className="absolute inset-0 w-full h-full object-cover opacity-50 grayscale"
           />
           <div className="relative z-10 bg-white p-6 rounded-xl shadow-lg text-center">

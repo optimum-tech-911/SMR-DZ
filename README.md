@@ -2,19 +2,19 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# SMR metallique DZ
 
-This contains everything you need to run your app locally.
+Site vitrine pour la société SRM DZ : installations, dépannages et maintenance de rideaux métalliques, volets roulants, vitrines et serrurerie à France et Espagne.
 
-View your app in AI Studio: https://ai.studio/apps/temp/1
+## Développement local
 
-## Run Locally
+**Prérequis :** Node.js 18+
 
-**Prerequisites:**  Node.js
+1. Installer les dépendances : `npm install`
+2. Lancer le serveur de développement : `npm run dev`
+3. Ouvrir l'URL indiquée par Vite (par défaut http://localhost:3000/)
 
+## Build de production
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- Générer les fichiers optimisés : `npm run build`
+- Prévisualiser le build : `npm run preview`

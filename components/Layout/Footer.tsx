@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { ShieldCheck, Phone, Mail, MapPin } from 'lucide-react';
 import { COMPANY_NAME, MAIN_BRANCH, NAV_LINKS, SERVICES } from '../../translations';
 import { useI18n } from '../../i18n';
 
@@ -19,17 +19,6 @@ const Footer: React.FC = () => {
               <span className="text-2xl font-bold">{COMPANY_NAME}</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">{t.footer.description}</p>
-            <div className="flex gap-4">
-              <a href="#" className="bg-secondary-800 p-2 rounded-full hover:bg-primary-500 transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="bg-secondary-800 p-2 rounded-full hover:bg-primary-500 transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="bg-secondary-800 p-2 rounded-full hover:bg-primary-500 transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </div>
           </div>
 
           <div>
@@ -91,7 +80,7 @@ const Footer: React.FC = () => {
             &copy; {new Date().getFullYear()} {COMPANY_NAME}. {t.footer.rights}
           </p>
           <div className="flex gap-6">
-            <Link to="/privacy" className="hover:text-white">
+            <Link to="/legal" className="hover:text-white">
               {t.footer.legal}
             </Link>
             <Link to="/privacy" className="hover:text-white">

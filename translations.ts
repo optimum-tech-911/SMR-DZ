@@ -1,21 +1,21 @@
 import { BranchInfo, Locale, NavLink, ProjectImage, ServiceItem, Testimonial } from './types';
 
-export const COMPANY_NAME = 'SMR DZ';
+export const COMPANY_NAME = 'SMR metallique DZ';
 
 export const MAIN_BRANCH: BranchInfo = {
-  city: 'Paris',
+  city: 'France',
   country: 'France',
   phone: '+33 0 00 00 00 00',
   email: 'contact@srm-france.com',
-  address: 'Île-de-France, Paris 75000',
+  address: 'France',
 };
 
 export const SPAIN_BRANCH: BranchInfo = {
-  city: 'Barcelone',
+  city: 'Espagne',
   country: 'Espagne',
   phone: '+34 000 000 000',
   email: 'barcelona@srm-france.com',
-  address: 'Barcelone, Catalogne',
+  address: 'Espagne',
 };
 
 export const NAV_LINKS: Record<Locale, NavLink[]> = {
@@ -24,7 +24,7 @@ export const NAV_LINKS: Record<Locale, NavLink[]> = {
     { label: 'À propos', path: '/about' },
     { label: 'Services', path: '/services' },
     { label: 'Réalisations', path: '/gallery' },
-    { label: 'Agence Barcelone', path: '/barcelona' },
+    { label: 'Agence Espagne', path: '/barcelona' },
     { label: 'Contact', path: '/contact' },
   ],
   es: [
@@ -32,7 +32,7 @@ export const NAV_LINKS: Record<Locale, NavLink[]> = {
     { label: 'Quiénes somos', path: '/about' },
     { label: 'Servicios', path: '/services' },
     { label: 'Proyectos', path: '/gallery' },
-    { label: 'Sucursal Barcelona', path: '/barcelona' },
+    { label: 'Sucursal Spain', path: '/barcelona' },
     { label: 'Contacto', path: '/contact' },
   ],
 };
@@ -46,7 +46,7 @@ export const SERVICES: Record<Locale, ServiceItem[]> = {
       iconSrc: rideauxIcon,
       imageSrc: rideauxImg,
       shortDescription:
-        'Installation, dépannage et modernisation de rideaux métalliques pour commerces parisiens.',
+        'Installation, dépannage et modernisation de rideaux métalliques pour commerces en France.',
       fullDescription:
         'Spécialistes des fermetures pour boutiques et entrepôts, nous motorisons, réparons et sécurisons vos rideaux métalliques après effraction ou vieillissement.',
       benefits: ['Sécurité accrue', 'Confort d’ouverture', 'Conformité assurance', 'Esthétique de façade'],
@@ -103,7 +103,7 @@ export const SERVICES: Record<Locale, ServiceItem[]> = {
       imageSrc: maintenanceImg,
       shortDescription: 'Contrats d’entretien et dépannage rapide 24h/24.',
       fullDescription:
-        'Suivi régulier, graissage, réglages et contrôle des organes de sécurité pour prolonger la durée de vie de vos installations à Paris et Barcelone.',
+        'Suivi régulier, graissage, réglages et contrôle des organes de sécurité pour prolonger la durée de vie de vos installations à France et Espagne.',
       benefits: ['Longévité du matériel', 'Prévention des pannes', 'Gestion simplifiée', 'Priorité d’intervention'],
     },
   ],
@@ -115,7 +115,7 @@ export const SERVICES: Record<Locale, ServiceItem[]> = {
       iconSrc: rideauxIcon,
       imageSrc: rideauxImg,
       shortDescription:
-        'Instalación y reparación de persianas metálicas para comercios de París y Barcelona.',
+        'Instalación y reparación de persianas metálicas para comercios de France y Spain.',
       fullDescription:
         'Motorizamos, reparamos y aseguramos persianas metálicas para tiendas y almacenes, incluyendo asistencia urgente tras intentos de intrusión.',
       benefits: ['Mayor seguridad', 'Apertura cómoda', 'Cumplimiento con seguros', 'Fachada cuidada'],
@@ -172,7 +172,7 @@ export const SERVICES: Record<Locale, ServiceItem[]> = {
       imageSrc: maintenanceImg,
       shortDescription: 'Contratos de mantenimiento y asistencia 24/7.',
       fullDescription:
-        'Seguimiento periódico, engrase, ajustes y control de seguridad para alargar la vida de tus instalaciones en París y Barcelona.',
+        'Seguimiento periódico, engrase, ajustes y control de seguridad para alargar la vida de tus instalaciones en France y Spain.',
       benefits: ['Mayor vida útil', 'Prevención de averías', 'Gestión sencilla', 'Prioridad de intervención'],
     },
   ],
@@ -183,13 +183,13 @@ export const TESTIMONIALS: Record<Locale, Testimonial[]> = {
     {
       id: 1,
       name: 'Claire M.',
-      role: 'Responsable de boutique, Paris 10e',
+      role: 'Responsable de boutique, France 10e',
       content:
         'Dépannage express un dimanche matin pour une persienne bloquée. Technicien ponctuel, travail propre, je recommande.',
     },
     {
       id: 2,
-      name: 'Logis Île-de-France',
+      name: 'Logis France',
       role: 'Gestionnaire de parc immobilier',
       content:
         'Contrat de maintenance sur nos résidences : les volets et portes de parking sont suivis, plus aucune panne longue.',
@@ -197,7 +197,7 @@ export const TESTIMONIALS: Record<Locale, Testimonial[]> = {
     {
       id: 3,
       name: 'Carlos R.',
-      role: 'Restaurateur, Barcelone',
+      role: 'Restaurateur, Espagne',
       content:
         'Remplacement de la vitrine avec vitrage sécurité et nouveau rideau métallique motorisé. Chantier livré dans les délais.',
     },
@@ -206,13 +206,13 @@ export const TESTIMONIALS: Record<Locale, Testimonial[]> = {
     {
       id: 1,
       name: 'Claire M.',
-      role: 'Gerente de tienda, París 10º',
+      role: 'Gerente de tienda, France',
       content:
         'Servicio urgente en domingo para una persiana bloqueada. Técnico puntual y limpio, totalmente recomendable.',
     },
     {
       id: 2,
-      name: 'Logis Île-de-France',
+      name: 'Logis France',
       role: 'Gestor inmobiliario',
       content:
         'Contrato de mantenimiento en nuestras residencias: persianas y puertas de garaje controladas, sin averías largas.',
@@ -220,7 +220,7 @@ export const TESTIMONIALS: Record<Locale, Testimonial[]> = {
     {
       id: 3,
       name: 'Carlos R.',
-      role: 'Restaurador, Barcelona',
+      role: 'Restaurador, Spain',
       content:
         'Sustitución del escaparate con vidrio de seguridad y nueva persiana motorizada. Obra entregada en plazo.',
     },
@@ -328,6 +328,8 @@ export const COPY: Record<
       mapTitle: string;
       mapSubtitle: string;
     };
+    legalPage: { title: string; intro: string; sections: { title: string; body: string[] }[] };
+    privacyPage: { title: string; intro: string; sections: { title: string; body: string[] }[] };
     footer: { description: string; servicesTitle: string; contactTitle: string; legal: string; privacy: string; rights: string; navigationTitle: string };
     branch: {
       heroTitle: string;
@@ -342,28 +344,28 @@ export const COPY: Record<
 > = {
   fr: {
     metadata: {
-      title: 'SMR DZ - Rideaux métalliques et sécurisation à Paris & Barcelone',
+      title: 'SMR metallique DZ - Rideaux métalliques et sécurisation à France & Espagne',
       description:
-        'Installation, dépannage et maintenance de rideaux métalliques, volets roulants, vitrines et serrurerie à Paris et à Barcelone.',
+        'Installation, dépannage et maintenance de rideaux métalliques, volets roulants, vitrines et serrurerie à France et à Espagne.',
     },
     header: {
       subtitle: 'Fermetures & Sécurisation',
       quote: 'Demander un Devis',
       mobileQuote: 'Obtenir un devis gratuit',
-      parisLabel: 'Agence Paris',
-      barcelonaLabel: 'Agence Barcelone',
+      parisLabel: 'Agence France',
+      barcelonaLabel: 'Agence Espagne',
       callUs: 'Appelez-nous',
     },
     home: {
-      heroTag: 'Expert fermetures Paris & Barcelone',
+      heroTag: 'Expert fermetures France & Espagne',
       heroTitle: 'Sécurisez vos accès',
-      heroHighlight: 'avec SMR DZ',
+      heroHighlight: 'avec SMR metallique DZ',
       heroDescription:
-        'Installation, réparation et maintenance de rideaux métalliques, volets roulants, vitrines et serrurerie. Intervention rapide en Île-de-France et à Barcelone.',
+        'Installation, réparation et maintenance de rideaux métalliques, volets roulants, vitrines et serrurerie. Intervention rapide en France et en Espagne.',
       primaryCta: 'Demander un devis',
       secondaryCta: 'Découvrir nos services',
       badges: ['Intervention 7j/7', 'Devis gratuit', 'Garantie décennale'],
-      whyTitle: 'Pourquoi choisir SMR DZ ?',
+      whyTitle: 'Pourquoi choisir SMR metallique DZ ?',
       whyDescription: 'Expertise technique, matériel certifié et service client réactif pour sécuriser vos locaux.',
       whyCards: [
         { title: 'Réactivité immédiate', body: 'Dépannage express pour vos accès bloqués, sécurité restaurée sans délai.' },
@@ -386,23 +388,23 @@ export const COPY: Record<
       cta: 'Demander un devis pour ce service',
     },
     about: {
-      title: 'À propos de SMR DZ',
-      intro: "Plus de 10 ans d'expertise en fermeture industrielle et résidentielle entre Paris et Barcelone.",
+      title: 'À propos de SMR metallique DZ',
+      intro: "Plus de 10 ans d'expertise en fermeture industrielle et résidentielle entre France et Espagne.",
       historyTitle: 'Notre histoire',
       paragraphs: [
-        "SMR DZ est née avec la conviction que la sécurité ne doit jamais être un compromis. Depuis Paris, nous accompagnons commerçants et gestionnaires d'immeubles avec des solutions robustes et esthétiques.",
-        'Notre équipe s’est forgée sur le terrain, du dépannage urgent à la conception de façades, avant de développer une présence dédiée à Barcelone pour nos clients espagnols.',
+        "SMR metallique DZ est née avec la conviction que la sécurité ne doit jamais être un compromis. Depuis France, nous accompagnons commerçants et gestionnaires d'immeubles avec des solutions robustes et esthétiques.",
+        'Notre équipe s’est forgée sur le terrain, du dépannage urgent à la conception de façades, avant de développer une présence dédiée à Espagne pour nos clients espagnols.',
         'Aujourd’hui nous intervenons pour des enseignes nationales, des PME et des particuliers qui recherchent un partenaire fiable pour leurs accès.',
       ],
       experienceLabel: "Années d'expérience",
       valuesTitle: 'Nos valeurs',
       values: [
         { title: 'Fiabilité', body: 'Installations durables, choix de marques reconnues et contrôles systématiques.' },
-        { title: 'Proximité', body: 'Équipes locales à Paris et Barcelone pour intervenir rapidement et conseiller au plus près du terrain.' },
+        { title: 'Proximité', body: 'Équipes locales à France et Espagne pour intervenir rapidement et conseiller au plus près du terrain.' },
         { title: 'Excellence', body: 'Techniciens formés, chantiers propres et suivi après-vente attentif.' },
       ],
       zoneTitle: "Zones d'intervention",
-      zoneBadge: 'Île-de-France & Barcelone métropolitaine',
+      zoneBadge: 'France & Espagne',
       zoneNote: 'Déplacements calculés au plus juste selon votre secteur.',
     },
     gallery: {
@@ -411,7 +413,7 @@ export const COPY: Record<
     },
     contact: {
       title: 'Contactez-nous',
-      intro: 'Demandez un devis ou planifiez une intervention sur Paris ou Barcelone.',
+      intro: 'Demandez un devis ou planifiez une intervention sur France ou Espagne.',
       infoTitle: 'Informations',
       phoneLabel: 'Téléphone',
       phoneNote: 'Du lundi au vendredi, 8h - 19h',
@@ -445,8 +447,75 @@ export const COPY: Record<
       successDescription: 'Merci pour votre message. Nous revenons vers vous rapidement.',
       sendAnother: 'Envoyer un autre message',
       scheduleNote: 'Urgences 24/7 sur sites critiques',
-      mapTitle: 'SMR DZ',
-      mapSubtitle: 'Intervention Île-de-France & Barcelone',
+      mapTitle: 'SMR metallique DZ',
+      mapSubtitle: 'Intervention France & Espagne',
+    },
+    legalPage: {
+      title: 'Mentions Légales',
+      intro: "Informations obligatoires relatives à l'éditeur du site et aux responsabilités.",
+      sections: [
+        {
+          title: 'Editeur du site',
+          body: [
+            'SMR metallique DZ, société de fermeture et sécurisation.',
+            'Email : contact@srm-france.com',
+            'Responsable de publication : Direction SMR metallique DZ.',
+          ],
+        },
+        {
+          title: 'Hébergeur',
+          body: [
+            'Site hébergé sur une infrastructure cloud conforme aux normes européennes de sécurité.',
+            'Disponibilité 24/7 sous réserve de maintenance programmée.',
+          ],
+        },
+        {
+          title: 'Propriété intellectuelle',
+          body: [
+            'Les contenus (textes, photos, visuels) sont la propriété de SMR metallique DZ ou utilisés avec autorisation.',
+            'Toute reproduction ou diffusion non autorisée est interdite.',
+          ],
+        },
+        {
+          title: 'Responsabilité',
+          body: [
+            "Les informations du site sont fournies à titre indicatif. SMR metallique DZ ne saurait être tenue responsable d'une erreur ou omission.",
+            "Les liens externes n'engagent pas la responsabilité de SMR metallique DZ.",
+          ],
+        },
+      ],
+    },
+    privacyPage: {
+      title: 'Politique de Confidentialité',
+      intro: 'Détails sur la collecte, l’utilisation et la protection de vos données personnelles.',
+      sections: [
+        {
+          title: 'Données collectées',
+          body: [
+            'Formulaire de contact : nom, email, téléphone, message.',
+            'Journalisation technique minimale pour la sécurité du site.',
+          ],
+        },
+        {
+          title: 'Finalités',
+          body: [
+            'Répondre à vos demandes de devis ou d’informations.',
+            'Améliorer la qualité de service et la sécurité de nos outils.',
+          ],
+        },
+        {
+          title: 'Durée de conservation',
+          body: [
+            'Les données issues du formulaire sont conservées le temps de traiter la demande puis archivées selon les obligations légales.',
+          ],
+        },
+        {
+          title: 'Vos droits',
+          body: [
+            'Accès, rectification, suppression et opposition. Pour exercer vos droits : contact@srm-france.com.',
+          ],
+        },
+      ],
     },
     footer: {
       description:
@@ -459,44 +528,44 @@ export const COPY: Record<
       navigationTitle: 'Navigation',
     },
     branch: {
-      heroTitle: 'Agence Barcelone',
+      heroTitle: 'Agence Espagne',
       heroDescription:
-        'Une équipe locale dédiée à vos chantiers en Catalogne : dépannage urgent, installations neuves et maintenance planifiée.',
+        'Une equipe locale dediee a vos chantiers en Espagne : depannage urgent, installations neuves et maintenance planifiee.',
       cards: [
         { title: 'Techs bilingues', body: 'Intervention en français ou en espagnol pour faciliter vos échanges.' },
         { title: 'Standards EU', body: 'Matériel certifié CE, respect des normes locales et exigences assurances.' },
-        { title: 'Coordination Paris/BCN', body: 'Un référent unique pour vos sites en France et en Espagne.' },
+        { title: 'Coordination France/Espagne', body: 'Un référent unique pour vos sites en France et en Espagne.' },
       ],
-      contactTitle: 'Coordonnées Barcelone',
+      contactTitle: 'Coordonnées Espagne',
       contactDescription: 'Votre interlocuteur local pour planifier visites, devis et maintenance.',
-      logistics: ['Stocks dédiés à Barcelone', 'Partenaires vitriers et serruriers locaux', 'Dépannage 24/7 sur sites sensibles'],
+      logistics: ['Stocks dédiés à Espagne', 'Partenaires vitriers et serruriers locaux', 'Dépannage 24/7 sur sites sensibles'],
     },
     common: { learnMore: 'En savoir plus', requestQuote: 'Demander un devis' },
   },
   es: {
     metadata: {
-      title: 'SMR DZ - Persianas metálicas y seguridad en París y Barcelona',
+      title: 'SMR metallique DZ - Persianas metálicas y seguridad en France y Spain',
       description:
-        'Instalación, reparación y mantenimiento de persianas metálicas, persianas enrollables, escaparates y cerrajería en París y Barcelona.',
+        'Instalación, reparación y mantenimiento de persianas metálicas, persianas enrollables, escaparates y cerrajería en France y Spain.',
     },
     header: {
       subtitle: 'Cierres y Seguridad',
       quote: 'Pedir presupuesto',
       mobileQuote: 'Solicitar presupuesto',
-      parisLabel: 'Agencia París',
-      barcelonaLabel: 'Agencia Barcelona',
+      parisLabel: 'Agencia France',
+      barcelonaLabel: 'Agencia Spain',
       callUs: 'Llámanos',
     },
     home: {
-      heroTag: 'Expertos en cierres París & Barcelona',
+      heroTag: 'Expertos en cierres France & Spain',
       heroTitle: 'Asegura tus accesos',
-      heroHighlight: 'con SMR DZ',
+      heroHighlight: 'con SMR metallique DZ',
       heroDescription:
-        'Instalación, reparación y mantenimiento de persianas metálicas, enrollables, escaparates y cerrajería. Intervención rápida en Île-de-France y Barcelona.',
+        'Instalación, reparación y mantenimiento de persianas metálicas, enrollables, escaparates y cerrajería. Intervención rápida en Francia y Spain.',
       primaryCta: 'Pedir presupuesto',
       secondaryCta: 'Ver nuestros servicios',
       badges: ['Intervención 7/7', 'Presupuesto gratuito', 'Garantía decenal'],
-      whyTitle: '¿Por qué elegir SMR DZ?',
+      whyTitle: '¿Por qué elegir SMR metallique DZ?',
       whyDescription: 'Experiencia técnica, material certificado y servicio ágil para asegurar tus locales.',
       whyCards: [
         { title: 'Reactividad inmediata', body: 'Asistencia exprés ante accesos bloqueados, seguridad restablecida al instante.' },
@@ -519,23 +588,23 @@ export const COPY: Record<
       cta: 'Solicitar presupuesto para este servicio',
     },
     about: {
-      title: 'Sobre SMR DZ',
-      intro: 'Más de 10 años de experiencia en cierres industriales y residenciales entre París y Barcelona.',
+      title: 'Sobre SMR metallique DZ',
+      intro: 'Más de 10 años de experiencia en cierres industriales y residenciales entre France y Spain.',
       historyTitle: 'Nuestra historia',
       paragraphs: [
-        'SMR DZ nació con la convicción de que la seguridad no debe ser un compromiso. Desde París acompañamos a comerciantes y gestores inmobiliarios con soluciones robustas y estéticas.',
-        'Nuestro equipo se formó en intervenciones urgentes y diseño de fachadas, antes de abrir una presencia dedicada en Barcelona para nuestros clientes en España.',
+        'SMR metallique DZ nació con la convicción de que la seguridad no debe ser un compromiso. Desde France acompañamos a comerciantes y gestores inmobiliarios con soluciones robustas y estéticas.',
+        'Nuestro equipo se formó en intervenciones urgentes y diseño de fachadas, antes de abrir una presencia dedicada en Spain para nuestros clientes en España.',
         'Hoy trabajamos con grandes cadenas, pymes y particulares que buscan un socio fiable para sus accesos.',
       ],
       experienceLabel: 'Años de experiencia',
       valuesTitle: 'Nuestros valores',
       values: [
         { title: 'Fiabilidad', body: 'Instalaciones duraderas, marcas reconocidas y controles sistemáticos.' },
-        { title: 'Proximidad', body: 'Equipos locales en París y Barcelona para intervenir rápido y aconsejar sobre el terreno.' },
+        { title: 'Proximidad', body: 'Equipos locales en France y Spain para intervenir rápido y aconsejar sobre el terreno.' },
         { title: 'Excelencia', body: 'Técnicos formados, obras limpias y seguimiento postventa atento.' },
       ],
       zoneTitle: 'Zonas de intervención',
-      zoneBadge: 'Île-de-France y Barcelona metropolitana',
+      zoneBadge: 'Francia y Spain',
       zoneNote: 'Desplazamientos calculados según tu zona.',
     },
     gallery: {
@@ -544,7 +613,7 @@ export const COPY: Record<
     },
     contact: {
       title: 'Contáctanos',
-      intro: 'Solicita presupuesto o programa una intervención en París o Barcelona.',
+      intro: 'Solicita presupuesto o programa una intervención en France o Spain.',
       infoTitle: 'Información',
       phoneLabel: 'Teléfono',
       phoneNote: 'De lunes a viernes, 8h - 19h',
@@ -578,8 +647,75 @@ export const COPY: Record<
       successDescription: 'Gracias por tu mensaje. Te responderemos muy pronto.',
       sendAnother: 'Enviar otro mensaje',
       scheduleNote: 'Urgencias 24/7 en sitios críticos',
-      mapTitle: 'SMR DZ',
-      mapSubtitle: 'Intervención Île-de-France y Barcelona',
+      mapTitle: 'SMR metallique DZ',
+      mapSubtitle: 'Intervención Francia y Spain',
+    },
+    legalPage: {
+      title: 'Aviso Legal',
+      intro: 'Información obligatoria sobre el editor del sitio y las responsabilidades aplicables.',
+      sections: [
+        {
+          title: 'Editor del sitio',
+          body: [
+            'SMR metallique DZ, empresa de cierre y seguridad.',
+            'Email: contact@srm-france.com',
+            'Responsable de publicación: Dirección SMR metallique DZ.',
+          ],
+        },
+        {
+          title: 'Alojamiento',
+          body: [
+            'Sitio alojado en infraestructura cloud conforme a normas europeas de seguridad.',
+            'Disponibilidad 24/7 salvo mantenimientos programados.',
+          ],
+        },
+        {
+          title: 'Propiedad intelectual',
+          body: [
+            'Los contenidos (textos, fotos, visuales) son propiedad de SMR metallique DZ o se usan con autorización.',
+            'Cualquier reproducción o difusión no autorizada está prohibida.',
+          ],
+        },
+        {
+          title: 'Responsabilidad',
+          body: [
+            'La información del sitio se ofrece a título orientativo. SMR metallique DZ no será responsable de errores u omisiones.',
+            'Los enlaces externos no comprometen la responsabilidad de SMR metallique DZ.',
+          ],
+        },
+      ],
+    },
+    privacyPage: {
+      title: 'Política de Privacidad',
+      intro: 'Detalles sobre la recogida, uso y protección de tus datos personales.',
+      sections: [
+        {
+          title: 'Datos recogidos',
+          body: [
+            'Formulario de contacto: nombre, email, teléfono, mensaje.',
+            'Registro técnico mínimo para la seguridad del sitio.',
+          ],
+        },
+        {
+          title: 'Finalidades',
+          body: [
+            'Responder a solicitudes de presupuesto o información.',
+            'Mejorar la calidad del servicio y la seguridad de nuestras herramientas.',
+          ],
+        },
+        {
+          title: 'Plazo de conservación',
+          body: [
+            'Los datos del formulario se conservan el tiempo necesario para tramitar la solicitud y luego se archivan según la ley.',
+          ],
+        },
+        {
+          title: 'Tus derechos',
+          body: [
+            'Acceso, rectificación, supresión y oposición. Para ejercerlos: contact@srm-france.com.',
+          ],
+        },
+      ],
     },
     footer: {
       description:
@@ -592,17 +728,17 @@ export const COPY: Record<
       navigationTitle: 'Navegación',
     },
     branch: {
-      heroTitle: 'Sucursal Barcelona',
+      heroTitle: 'Sucursal Spain',
       heroDescription:
-        'Equipo local dedicado a tus obras en Cataluña: asistencia urgente, instalaciones nuevas y mantenimiento planificado.',
+        'Equipo local dedicado a tus obras en Espana: asistencia urgente, instalaciones nuevas y mantenimiento planificado.',
       cards: [
         { title: 'Técnicos bilingües', body: 'Intervenimos en francés o español para facilitar la coordinación.' },
         { title: 'Estándares UE', body: 'Material certificado CE, cumplimiento de normas locales y seguros.' },
-        { title: 'Coordinación París/BCN', body: 'Un único referente para tus sitios en Francia y España.' },
+        { title: 'Coordinación France/Espagne', body: 'Un único referente para tus sitios en Francia y España.' },
       ],
-      contactTitle: 'Datos de contacto Barcelona',
+      contactTitle: 'Datos de contacto Spain',
       contactDescription: 'Tu interlocutor local para visitas, presupuestos y mantenimiento.',
-      logistics: ['Stock dedicado en Barcelona', 'Colaboración con cristaleros y cerrajeros locales', 'Asistencia 24/7 en sitios sensibles'],
+      logistics: ['Stock dedicado en Spain', 'Colaboración con cristaleros y cerrajeros locales', 'Asistencia 24/7 en sitios sensibles'],
     },
     common: { learnMore: 'Saber más', requestQuote: 'Pedir presupuesto' },
   },

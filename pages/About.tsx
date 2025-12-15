@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Shield, Users, Award, MapPin } from 'lucide-react';
 import { useI18n } from '../i18n';
 import { MAIN_BRANCH, SPAIN_BRANCH } from '../translations';
@@ -75,8 +75,8 @@ const About: React.FC = () => {
           </div>
           <p className="mt-4 text-gray-500">{t.about.zoneNote}</p>
           <div className="mt-6 text-sm text-gray-600 flex flex-col sm:flex-row gap-3 justify-center">
-            <span className="px-3 py-2 rounded-full bg-white shadow border border-gray-100">Paris : {MAIN_BRANCH.address}</span>
-            <span className="px-3 py-2 rounded-full bg-white shadow border border-gray-100">Barcelone : {SPAIN_BRANCH.address}</span>
+            <span className="px-3 py-2 rounded-full bg-white shadow border border-gray-100">France : {MAIN_BRANCH.address}</span>
+            <span className="px-3 py-2 rounded-full bg-white shadow border border-gray-100">Espagne : {SPAIN_BRANCH.address}</span>
           </div>
         </div>
 
@@ -84,17 +84,17 @@ const About: React.FC = () => {
           <div className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
             <div className="p-6 flex items-center justify-between">
               <div>
-                <p className="text-sm text-gray-500 uppercase tracking-wide">Agence de Paris</p>
-                <h3 className="text-2xl font-bold text-secondary-900">Île-de-France</h3>
+                <p className="text-sm text-gray-500 uppercase tracking-wide">Agence France</p>
+                <h3 className="text-2xl font-bold text-secondary-900">France</h3>
               </div>
               <div className="px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-sm font-semibold">
-                Paris
+                France
               </div>
             </div>
             <div className="aspect-[4/3] bg-gray-200">
               <iframe
-                title="Agence de Paris"
-                src="https://www.google.com/maps?q=Paris,France&output=embed"
+                title="Agence France"
+                src="https://www.google.com/maps?q=France&output=embed"
                 className="w-full h-full border-0"
                 loading="lazy"
               ></iframe>
@@ -104,17 +104,17 @@ const About: React.FC = () => {
           <div className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
             <div className="p-6 flex items-center justify-between">
               <div>
-                <p className="text-sm text-gray-500 uppercase tracking-wide">Agence de Barcelone</p>
-                <h3 className="text-2xl font-bold text-secondary-900">Catalogne</h3>
+                <p className="text-sm text-gray-500 uppercase tracking-wide">Agence Espagne</p>
+                <h3 className="text-2xl font-bold text-secondary-900">Espagne</h3>
               </div>
               <div className="px-3 py-1 rounded-full bg-primary-50 text-primary-700 text-sm font-semibold">
-                Barcelone
+                Espagne
               </div>
             </div>
             <div className="aspect-[4/3] bg-gray-200">
               <iframe
-                title="Agence de Barcelone"
-                src="https://www.google.com/maps?q=Barcelona,Spain&output=embed"
+                title="Agence Espagne"
+                src="https://www.google.com/maps?q=Spain&z=6&output=embed"
                 className="w-full h-full border-0"
                 loading="lazy"
               ></iframe>

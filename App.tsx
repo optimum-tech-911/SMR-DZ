@@ -8,6 +8,8 @@ import Services from './pages/Services';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Barcelona from './pages/Barcelona';
+import Legal from './pages/Legal';
+import Privacy from './pages/Privacy';
 import { I18nProvider, useI18n } from './i18n';
 
 // Scroll to top on route change
@@ -45,6 +47,8 @@ const AppContent: React.FC = () => {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/barcelona" element={<Barcelona />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/legal" element={<Legal />} />
+            <Route path="/privacy" element={<Privacy />} />
           </Routes>
         </main>
         <Footer />

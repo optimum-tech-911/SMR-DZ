@@ -3,7 +3,7 @@ import { Building2, Globe2, PhoneCall, ShieldCheck, Truck } from 'lucide-react';
 import { useI18n } from '../i18n';
 import { SPAIN_BRANCH } from '../translations';
 
-const Barcelona: React.FC = () => {
+const Spain: React.FC = () => {
   const { t, locale } = useI18n();
 
   return (
@@ -16,7 +16,7 @@ const Barcelona: React.FC = () => {
           <div className="flex-1">
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15 px-4 py-2 rounded-full text-sm font-semibold mb-4">
               <ShieldCheck className="h-4 w-4" />
-              <span>SMR DZ · Barcelona</span>
+              <span>SMR metallique DZ · Spain</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
               {t.branch.heroTitle}
@@ -47,7 +47,7 @@ const Barcelona: React.FC = () => {
                 <h3 className="text-xl font-bold mb-1">{t.branch.contactTitle}</h3>
                 <p className="text-blue-100 mb-4">{t.branch.contactDescription}</p>
                 <ul className="space-y-2 text-sm">
-                  <li><strong>{locale === 'es' ? 'Barcelona' : 'Barcelone'} :</strong> {SPAIN_BRANCH.address}</li>
+                  <li><strong>{locale === 'es' ? 'Spain' : 'Espagne'} :</strong> {SPAIN_BRANCH.address}</li>
                   <li><strong>{locale === 'es' ? 'Tel :' : 'Tél :'}</strong> {SPAIN_BRANCH.phone}</li>
                   <li><strong>Email :</strong> {SPAIN_BRANCH.email}</li>
                 </ul>
@@ -97,7 +97,7 @@ const Barcelona: React.FC = () => {
                 <PhoneCall className="h-5 w-5 text-primary-600" />
                 <div>
                   <p className="text-sm text-gray-500 uppercase font-semibold">
-                    {locale === 'es' ? 'Barcelona' : 'Barcelone'}
+                    {locale === 'es' ? 'Spain' : 'Espagne'}
                   </p>
                   <p className="text-2xl font-bold">{SPAIN_BRANCH.phone}</p>
                 </div>
@@ -126,4 +126,4 @@ const Barcelona: React.FC = () => {
   );
 };
 
-export default Barcelona;
+export default Spain;
