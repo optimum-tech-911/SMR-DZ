@@ -2,7 +2,7 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# SMR metallique DZ
+# SRM metal DZ
 
 Site vitrine pour la société SRM DZ : installations, dépannages et maintenance de rideaux métalliques, volets roulants, vitrines et serrurerie à France et Espagne.
 

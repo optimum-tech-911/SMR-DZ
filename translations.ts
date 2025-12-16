@@ -1,6 +1,6 @@
 import { BranchInfo, Locale, NavLink, ProjectImage, ServiceItem, Testimonial } from './types';
 
-export const COMPANY_NAME = 'SMR metallique DZ';
+export const COMPANY_NAME = 'SRM metal DZ';
 
 export const MAIN_BRANCH: BranchInfo = {
   city: 'France',
@@ -344,7 +344,7 @@ export const COPY: Record<
 > = {
   fr: {
     metadata: {
-      title: 'SMR metallique DZ - Rideaux métalliques et sécurisation à France & Espagne',
+      title: 'SRM metal DZ - Rideaux métalliques et sécurisation à France & Espagne',
       description:
         'Installation, dépannage et maintenance de rideaux métalliques, volets roulants, vitrines et serrurerie à France et à Espagne.',
     },
@@ -359,13 +359,13 @@ export const COPY: Record<
     home: {
       heroTag: 'Expert fermetures France & Espagne',
       heroTitle: 'Sécurisez vos accès',
-      heroHighlight: 'avec SMR metallique DZ',
+      heroHighlight: 'avec SRM metal DZ',
       heroDescription:
         'Installation, réparation et maintenance de rideaux métalliques, volets roulants, vitrines et serrurerie. Intervention rapide en France et en Espagne.',
       primaryCta: 'Demander un devis',
       secondaryCta: 'Découvrir nos services',
       badges: ['Intervention 7j/7', 'Devis gratuit', 'Garantie décennale'],
-      whyTitle: 'Pourquoi choisir SMR metallique DZ ?',
+      whyTitle: 'Pourquoi choisir SRM metal DZ ?',
       whyDescription: 'Expertise technique, matériel certifié et service client réactif pour sécuriser vos locaux.',
       whyCards: [
         { title: 'Réactivité immédiate', body: 'Dépannage express pour vos accès bloqués, sécurité restaurée sans délai.' },
@@ -388,11 +388,11 @@ export const COPY: Record<
       cta: 'Demander un devis pour ce service',
     },
     about: {
-      title: 'À propos de SMR metallique DZ',
+      title: 'À propos de SRM metal DZ',
       intro: "Plus de 10 ans d'expertise en fermeture industrielle et résidentielle entre France et Espagne.",
       historyTitle: 'Notre histoire',
       paragraphs: [
-        "SMR metallique DZ est née avec la conviction que la sécurité ne doit jamais être un compromis. Depuis France, nous accompagnons commerçants et gestionnaires d'immeubles avec des solutions robustes et esthétiques.",
+        "SRM metal DZ est née avec la conviction que la sécurité ne doit jamais être un compromis. Depuis France, nous accompagnons commerçants et gestionnaires d'immeubles avec des solutions robustes et esthétiques.",
         'Notre équipe s’est forgée sur le terrain, du dépannage urgent à la conception de façades, avant de développer une présence dédiée à Espagne pour nos clients espagnols.',
         'Aujourd’hui nous intervenons pour des enseignes nationales, des PME et des particuliers qui recherchent un partenaire fiable pour leurs accès.',
       ],
@@ -447,7 +447,7 @@ export const COPY: Record<
       successDescription: 'Merci pour votre message. Nous revenons vers vous rapidement.',
       sendAnother: 'Envoyer un autre message',
       scheduleNote: 'Urgences 24/7 sur sites critiques',
-      mapTitle: 'SMR metallique DZ',
+      mapTitle: 'SRM metal DZ',
       mapSubtitle: 'Intervention France & Espagne',
     },
     legalPage: {
@@ -457,9 +457,9 @@ export const COPY: Record<
         {
           title: 'Editeur du site',
           body: [
-            'SMR metallique DZ, société de fermeture et sécurisation.',
+            'SRM metal DZ, société de fermeture et sécurisation.',
             'Email : contact@srm-france.com',
-            'Responsable de publication : Direction SMR metallique DZ.',
+            'Responsable de publication : Direction SRM metal DZ.',
           ],
         },
         {
@@ -472,15 +472,15 @@ export const COPY: Record<
         {
           title: 'Propriété intellectuelle',
           body: [
-            'Les contenus (textes, photos, visuels) sont la propriété de SMR metallique DZ ou utilisés avec autorisation.',
+            'Les contenus (textes, photos, visuels) sont la propriété de SRM metal DZ ou utilisés avec autorisation.',
             'Toute reproduction ou diffusion non autorisée est interdite.',
           ],
         },
         {
           title: 'Responsabilité',
           body: [
-            "Les informations du site sont fournies à titre indicatif. SMR metallique DZ ne saurait être tenue responsable d'une erreur ou omission.",
-            "Les liens externes n'engagent pas la responsabilité de SMR metallique DZ.",
+            "Les informations du site sont fournies à titre indicatif. SRM metal DZ ne saurait être tenue responsable d'une erreur ou omission.",
+            "Les liens externes n'engagent pas la responsabilité de SRM metal DZ.",
           ],
         },
       ],
@@ -544,7 +544,7 @@ export const COPY: Record<
   },
   es: {
     metadata: {
-      title: 'SMR metallique DZ - Persianas metálicas y seguridad en France y Spain',
+      title: 'SRM metal DZ - Persianas metálicas y seguridad en France y Spain',
       description:
         'Instalación, reparación y mantenimiento de persianas metálicas, persianas enrollables, escaparates y cerrajería en France y Spain.',
     },
@@ -559,13 +559,13 @@ export const COPY: Record<
     home: {
       heroTag: 'Expertos en cierres France & Spain',
       heroTitle: 'Asegura tus accesos',
-      heroHighlight: 'con SMR metallique DZ',
+      heroHighlight: 'con SRM metal DZ',
       heroDescription:
         'Instalación, reparación y mantenimiento de persianas metálicas, enrollables, escaparates y cerrajería. Intervención rápida en Francia y Spain.',
       primaryCta: 'Pedir presupuesto',
       secondaryCta: 'Ver nuestros servicios',
       badges: ['Intervención 7/7', 'Presupuesto gratuito', 'Garantía decenal'],
-      whyTitle: '¿Por qué elegir SMR metallique DZ?',
+      whyTitle: '¿Por qué elegir SRM metal DZ?',
       whyDescription: 'Experiencia técnica, material certificado y servicio ágil para asegurar tus locales.',
       whyCards: [
         { title: 'Reactividad inmediata', body: 'Asistencia exprés ante accesos bloqueados, seguridad restablecida al instante.' },
@@ -588,11 +588,11 @@ export const COPY: Record<
       cta: 'Solicitar presupuesto para este servicio',
     },
     about: {
-      title: 'Sobre SMR metallique DZ',
+      title: 'Sobre SRM metal DZ',
       intro: 'Más de 10 años de experiencia en cierres industriales y residenciales entre France y Spain.',
       historyTitle: 'Nuestra historia',
       paragraphs: [
-        'SMR metallique DZ nació con la convicción de que la seguridad no debe ser un compromiso. Desde France acompañamos a comerciantes y gestores inmobiliarios con soluciones robustas y estéticas.',
+        'SRM metal DZ nació con la convicción de que la seguridad no debe ser un compromiso. Desde France acompañamos a comerciantes y gestores inmobiliarios con soluciones robustas y estéticas.',
         'Nuestro equipo se formó en intervenciones urgentes y diseño de fachadas, antes de abrir una presencia dedicada en Spain para nuestros clientes en España.',
         'Hoy trabajamos con grandes cadenas, pymes y particulares que buscan un socio fiable para sus accesos.',
       ],
@@ -647,7 +647,7 @@ export const COPY: Record<
       successDescription: 'Gracias por tu mensaje. Te responderemos muy pronto.',
       sendAnother: 'Enviar otro mensaje',
       scheduleNote: 'Urgencias 24/7 en sitios críticos',
-      mapTitle: 'SMR metallique DZ',
+      mapTitle: 'SRM metal DZ',
       mapSubtitle: 'Intervención Francia y Spain',
     },
     legalPage: {
@@ -657,9 +657,9 @@ export const COPY: Record<
         {
           title: 'Editor del sitio',
           body: [
-            'SMR metallique DZ, empresa de cierre y seguridad.',
+            'SRM metal DZ, empresa de cierre y seguridad.',
             'Email: contact@srm-france.com',
-            'Responsable de publicación: Dirección SMR metallique DZ.',
+            'Responsable de publicación: Dirección SRM metal DZ.',
           ],
         },
         {
@@ -672,15 +672,15 @@ export const COPY: Record<
         {
           title: 'Propiedad intelectual',
           body: [
-            'Los contenidos (textos, fotos, visuales) son propiedad de SMR metallique DZ o se usan con autorización.',
+            'Los contenidos (textos, fotos, visuales) son propiedad de SRM metal DZ o se usan con autorización.',
             'Cualquier reproducción o difusión no autorizada está prohibida.',
           ],
         },
         {
           title: 'Responsabilidad',
           body: [
-            'La información del sitio se ofrece a título orientativo. SMR metallique DZ no será responsable de errores u omisiones.',
-            'Los enlaces externos no comprometen la responsabilidad de SMR metallique DZ.',
+            'La información del sitio se ofrece a título orientativo. SRM metal DZ no será responsable de errores u omisiones.',
+            'Los enlaces externos no comprometen la responsabilidad de SRM metal DZ.',
           ],
         },
       ],
