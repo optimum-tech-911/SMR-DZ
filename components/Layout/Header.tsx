@@ -45,17 +45,32 @@ const Header: React.FC = () => {
     return [...navItems, ...services, ...extras];
   }, [locale, t]);
 
-  const filteredResults = React.useMemo(() => {
+  const allFilteredResults = React.useMemo(() => {
     const term = searchTerm.trim().toLowerCase();
-    const base = term
+    return term
       ? searchItems.filter(
           (item) =>
             item.label.toLowerCase().includes(term) ||
             (item.description && item.description.toLowerCase().includes(term)),
         )
       : searchItems;
-    return base.slice(0, 8);
   }, [searchItems, searchTerm]);
+
+  const dropdownResults = React.useMemo(() => {
+    return allFilteredResults.slice(0, 8);
+  }, [allFilteredResults]);
+
+  const mainNavLinks = React.useMemo(() => {
+    return NAV_LINKS[locale].filter((link) =>
+      ['/', '/about', '/services', '/gallery'].includes(link.path),
+    );
+  }, [locale]);
+
+  const agencyLinks = React.useMemo(() => {
+    return NAV_LINKS[locale].filter(
+      (link) => !['/', '/about', '/services', '/gallery', '/contact'].includes(link.path),
+    );
+  }, [locale]);
 
   return (
     <header
@@ -89,8 +104,8 @@ const Header: React.FC = () => {
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-white/70" />
             {searchTerm && (
               <div className="absolute mt-2 w-full bg-white text-gray-900 rounded-xl shadow-2xl border border-gray-100 max-h-72 overflow-y-auto z-10">
-                {filteredResults.length ? (
-                  filteredResults.map((item) => (
+                {dropdownResults.length ? (
+                  dropdownResults.map((item) => (
                     <Link
                       key={`${item.path}-${item.label}`}
                       to={item.path}
@@ -200,23 +215,60 @@ const Header: React.FC = () => {
                 Navigation
               </h3>
               <div className="space-y-2">
-                {filteredResults.map((item) => (
-                  <Link
-                    key={`${item.path}-${item.label}`}
-                    to={item.path}
-                    onClick={() => {
-                      setIsOpen(false);
-                      setSearchTerm('');
-                    }}
-                    className="group relative block px-4 py-3 rounded-xl text-base font-semibold transition-all text-white hover:bg-white/10 hover:shadow-md"
-                  >
-                    <span className="inline-flex items-center gap-2 transition-transform duration-200 group-hover:scale-105">
-                      {item.label}
-                    </span>
-                    <span className="block text-xs text-primary-100">{item.description}</span>
-                    <span className="pointer-events-none absolute left-4 right-4 bottom-2 h-0.5 origin-center scale-x-0 bg-primary-400 transition-transform duration-200 group-hover:scale-x-100" />
-                  </Link>
-                ))}
+                {searchTerm ? (
+                  allFilteredResults.map((item) => (
+                    <Link
+                      key={`${item.path}-${item.label}`}
+                      to={item.path}
+                      onClick={() => {
+                        setIsOpen(false);
+                        setSearchTerm('');
+                      }}
+                      className="group relative block px-4 py-3 rounded-xl text-base font-semibold transition-all text-white hover:bg-white/10 hover:shadow-md"
+                    >
+                      <span className="inline-flex items-center gap-2 transition-transform duration-200 group-hover:scale-105">
+                        {item.label}
+                      </span>
+                      <span className="block text-xs text-primary-100">{item.description}</span>
+                      <span className="pointer-events-none absolute left-4 right-4 bottom-2 h-0.5 origin-center scale-x-0 bg-primary-400 transition-transform duration-200 group-hover:scale-x-100" />
+                    </Link>
+                  ))
+                ) : (
+                  <>
+                    {mainNavLinks.map((item) => (
+                      <Link
+                        key={item.path}
+                        to={item.path}
+                        onClick={() => setIsOpen(false)}
+                        className="group relative block px-4 py-3 rounded-xl text-base font-semibold transition-all text-white hover:bg-white/10 hover:shadow-md"
+                      >
+                        <span className="inline-flex items-center gap-2 transition-transform duration-200 group-hover:scale-105">
+                          {item.label}
+                        </span>
+                        <span className="block text-xs text-primary-100">{t.footer.navigationTitle}</span>
+                        <span className="pointer-events-none absolute left-4 right-4 bottom-2 h-0.5 origin-center scale-x-0 bg-primary-400 transition-transform duration-200 group-hover:scale-x-100" />
+                      </Link>
+                    ))}
+
+                    <h3 className="text-sm font-semibold text-primary-300 tracking-wide uppercase border-b border-primary-500/60 pb-1 pt-4 mb-2">
+                      {locale === 'fr' ? 'Nos Agences' : 'Nuestras Agencias'}
+                    </h3>
+                    {agencyLinks.map((item) => (
+                      <Link
+                        key={item.path}
+                        to={item.path}
+                        onClick={() => setIsOpen(false)}
+                        className="group relative block px-4 py-3 rounded-xl text-base font-semibold transition-all text-white hover:bg-white/10 hover:shadow-md"
+                      >
+                        <span className="inline-flex items-center gap-2 transition-transform duration-200 group-hover:scale-105">
+                          {item.label}
+                        </span>
+                        <span className="block text-xs text-primary-100">{t.footer.navigationTitle}</span>
+                        <span className="pointer-events-none absolute left-4 right-4 bottom-2 h-0.5 origin-center scale-x-0 bg-primary-400 transition-transform duration-200 group-hover:scale-x-100" />
+                      </Link>
+                    ))}
+                  </>
+                )}
               </div>
               <Link
                 to="/contact"

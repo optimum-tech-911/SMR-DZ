@@ -25,6 +25,11 @@ export const NAV_LINKS: Record<Locale, NavLink[]> = {
     { label: 'Services', path: '/services' },
     { label: 'Réalisations', path: '/gallery' },
     { label: 'Agence Espagne', path: '/barcelona' },
+    { label: 'Agence Lille', path: '/lille' },
+    { label: 'Agence Metz', path: '/metz' },
+    { label: 'Agence Nantes', path: '/nantes' },
+    { label: 'Agence Lyon', path: '/lyon' },
+    { label: 'Agence Montpellier', path: '/montpellier' },
     { label: 'Contact', path: '/contact' },
   ],
   es: [
@@ -33,6 +38,11 @@ export const NAV_LINKS: Record<Locale, NavLink[]> = {
     { label: 'Servicios', path: '/services' },
     { label: 'Proyectos', path: '/gallery' },
     { label: 'Sucursal Spain', path: '/barcelona' },
+    { label: 'Agencia Lille', path: '/lille' },
+    { label: 'Agencia Metz', path: '/metz' },
+    { label: 'Agencia Nantes', path: '/nantes' },
+    { label: 'Agencia Lyon', path: '/lyon' },
+    { label: 'Agencia Montpellier', path: '/montpellier' },
     { label: 'Contacto', path: '/contact' },
   ],
 };
